@@ -1,0 +1,320 @@
+{
+    "slots": {
+        "0": {
+            "name": "Screen",
+            "type": {
+                "events": [],
+                "methods": []
+            }
+        },
+        "1": {
+            "name": "Memory",
+            "type": {
+                "events": [],
+                "methods": []
+            }
+        },
+        "2": {
+            "name": "Hub1",
+            "type": {
+                "events": [],
+                "methods": []
+            }
+        },
+        "3": {
+            "name": "Hub2",
+            "type": {
+                "events": [],
+                "methods": []
+            }
+        },
+        "4": {
+            "name": "Hub3",
+            "type": {
+                "events": [],
+                "methods": []
+            }
+        },
+        "5": {
+            "name": "Hub4",
+            "type": {
+                "events": [],
+                "methods": []
+            }
+        },
+        "6": {
+            "name": "Hub5",
+            "type": {
+                "events": [],
+                "methods": []
+            }
+        },
+        "7": {
+            "name": "Hub6",
+            "type": {
+                "events": [],
+                "methods": []
+            }
+        },
+        "8": {
+            "name": "Hub7",
+            "type": {
+                "events": [],
+                "methods": []
+            }
+        },
+        "9": {
+            "name": "Hub8",
+            "type": {
+                "events": [],
+                "methods": []
+            }
+        },
+        "-1": {
+            "name": "unit",
+            "type": {
+                "events": [],
+                "methods": []
+            }
+        },
+        "-3": {
+            "name": "player",
+            "type": {
+                "events": [],
+                "methods": []
+            }
+        },
+        "-2": {
+            "name": "construct",
+            "type": {
+                "events": [],
+                "methods": []
+            }
+        },
+        "-4": {
+            "name": "system",
+            "type": {
+                "events": [],
+                "methods": []
+            }
+        },
+        "-5": {
+            "name": "library",
+            "type": {
+                "events": [],
+                "methods": []
+            }
+        }
+    },
+    "handlers": [
+        {
+            "code": "unit.setTimer('ReloadTimer',1)",
+            "filter": {
+                "args": [
+                    {
+                        "value": "Reload"
+                    }
+                ],
+                "signature": "onOutputChanged(output)",
+                "slotKey": "0"
+            },
+            "key": "0"
+        },
+        {
+            "code": "SortSwitch = 4\nMemory.setIntValue('SortSwitch',SortSwitch)\nUpdateData()",
+            "filter": {
+                "args": [
+                    {
+                        "value": "Item"
+                    }
+                ],
+                "signature": "onOutputChanged(output)",
+                "slotKey": "0"
+            },
+            "key": "1"
+        },
+        {
+            "code": "SortSwitch = 2\nMemory.setIntValue('SortSwitch',SortSwitch)\nUpdateData()",
+            "filter": {
+                "args": [
+                    {
+                        "value": "Quantity"
+                    }
+                ],
+                "signature": "onOutputChanged(output)",
+                "slotKey": "0"
+            },
+            "key": "2"
+        },
+        {
+            "code": "SortSwitch = 3\nMemory.setIntValue('SortSwitch',SortSwitch)\nUpdateData()",
+            "filter": {
+                "args": [
+                    {
+                        "value": "Mass"
+                    }
+                ],
+                "signature": "onOutputChanged(output)",
+                "slotKey": "0"
+            },
+            "key": "3"
+        },
+        {
+            "code": "SortSwitch = 1\nMemory.setIntValue('SortSwitch',SortSwitch)\nUpdateData()",
+            "filter": {
+                "args": [
+                    {
+                        "value": "Volume"
+                    }
+                ],
+                "signature": "onOutputChanged(output)",
+                "slotKey": "0"
+            },
+            "key": "4"
+        },
+        {
+            "code": "DisplayMode = 'Table'\nMemory.setStringValue('DisplayMode',DisplayMode)\nUpdateData()",
+            "filter": {
+                "args": [
+                    {
+                        "value": "Table"
+                    }
+                ],
+                "signature": "onOutputChanged(output)",
+                "slotKey": "0"
+            },
+            "key": "5"
+        },
+        {
+            "code": "DisplayMode = 'Cards'\nMemory.setStringValue('DisplayMode',DisplayMode)\nUpdateData()",
+            "filter": {
+                "args": [
+                    {
+                        "value": "Cards"
+                    }
+                ],
+                "signature": "onOutputChanged(output)",
+                "slotKey": "0"
+            },
+            "key": "6"
+        },
+        {
+            "code": "Hub1Parsed = ReceivePayload(Hub1)",
+            "filter": {
+                "args": [],
+                "signature": "onContentUpdate()",
+                "slotKey": "2"
+            },
+            "key": "7"
+        },
+        {
+            "code": "Hub2Parsed = ReceivePayload(Hub2)",
+            "filter": {
+                "args": [],
+                "signature": "onContentUpdate()",
+                "slotKey": "3"
+            },
+            "key": "8"
+        },
+        {
+            "code": "Hub3Parsed = ReceivePayload(Hub3)",
+            "filter": {
+                "args": [],
+                "signature": "onContentUpdate()",
+                "slotKey": "4"
+            },
+            "key": "9"
+        },
+        {
+            "code": "Hub4Parsed = ReceivePayload(Hub4)",
+            "filter": {
+                "args": [],
+                "signature": "onContentUpdate()",
+                "slotKey": "5"
+            },
+            "key": "10"
+        },
+        {
+            "code": "Hub5Parsed = ReceivePayload(Hub5)",
+            "filter": {
+                "args": [],
+                "signature": "onContentUpdate()",
+                "slotKey": "6"
+            },
+            "key": "11"
+        },
+        {
+            "code": "Hub6Parsed = ReceivePayload(Hub6)",
+            "filter": {
+                "args": [],
+                "signature": "onContentUpdate()",
+                "slotKey": "7"
+            },
+            "key": "12"
+        },
+        {
+            "code": "Hub7Parsed = ReceivePayload(Hub7)",
+            "filter": {
+                "args": [],
+                "signature": "onContentUpdate()",
+                "slotKey": "8"
+            },
+            "key": "13"
+        },
+        {
+            "code": "Hub8Parsed = ReceivePayload(Hub8)",
+            "filter": {
+                "args": [],
+                "signature": "onContentUpdate()",
+                "slotKey": "9"
+            },
+            "key": "14"
+        },
+        {
+            "code": "-------- Initialization --------\nScreen.setScriptInput('')\n\nDisplayMode = 'Table'\nSortSwitch = 1\n\nif Memory.hasKey('DisplayMode') == 1 then\n    DisplayMode = Memory.getStringValue('DisplayMode')\nend\n\nif Memory.hasKey('SortSwitch') == 1 then\n    SortSwitch = Memory.getIntValue('SortSwitch')\nend\n\nUpdateTime = 0\n\nif Memory.hasKey('UpdateTime') == 1 then\n    UpdateTime = Memory.getIntValue('UpdateTime')\nend   \n\nHub1Updated = false\nHub2Updated = false\nHub3Updated = false\nHub4Updated = false\nHub5Updated = false\nHub6Updated = false\nHub7Updated = false\nHub8Updated = false\n\nHub1Parsed = false\nHub2Parsed = false\nHub3Parsed = false\nHub4Parsed = false\nHub5Parsed = false\nHub6Parsed = false\nHub7Parsed = false\nHub8Parsed = false\n\nNHubs = exists(Hub1)+exists(Hub2)+exists(Hub3)+exists(Hub4)\n+exists(Hub5)+exists(Hub6)+exists(Hub7)+exists(Hub8)\n\nPage = 1\nNumItems = 0\n\nItemsListName = {}\nItemsListQuantity = {}\nItemsListVolume = {}     \nItemsListMass = {}\nItemsList = {}\n\nif Memory.hasKey('ItemsList') == 1 then\n    ItemsList = json.decode(Memory.getStringValue('ItemsList'))\n    NumItems = 0 \n    unit.stopTimer('ReloadTimer') \n    \n    for id, quantity in pairs(ItemsList) do\n        \n        NumItems = NumItems + 1\n        \n        itemData = system.getItem(tonumber(id))\n        \n        ItemsListName[id] = itemData[\"displayNameWithSize\"]\n        ItemsListQuantity[id] = quantity\n        ItemsListVolume[id] = quantity*itemData[\"unitVolume\"]        \n        ItemsListMass[id] = quantity*itemData[\"unitMass\"]\n\n    end\n    \nend\nUpdateData()\n\nunit.setTimer('ListenforInput',1/10)",
+            "filter": {
+                "args": [],
+                "signature": "onStart()",
+                "slotKey": "-1"
+            },
+            "key": "15"
+        },
+        {
+            "code": "if Hub1 and not Hub1Updated then  \n    H1 = Hub1.updateContent()\n    if H1 > 0 then \n        unit.setTimer('ReloadTimer',H1+1)\n    else\n        Hub1Updated = true\n    end\n    goto continue\nend\n\nif Hub2 and not Hub2Updated then \n    H2 = Hub2.updateContent()\n    if H2 > 0 then\n        unit.setTimer('ReloadTimer',H2+1)\n    else\n        Hub2Updated = true\n    end\n    goto continue\nend\n\nif Hub3 and not Hub3Updated then \n    H3 = Hub3.updateContent()\n    if H3 > 0 then\n        unit.setTimer('ReloadTimer',H3+1)\n    else\n        Hub3Updated = true\n    end\n    goto continue\nend\n\nif Hub4 and not Hub4Updated then \n    H4 = Hub4.updateContent()\n    if H4 > 0 then\n        unit.setTimer('ReloadTimer',H4+1)\n    else\n        Hub4Updated = true\n    end\n    goto continue\nend\n\nif Hub5 and not Hub5Updated then  \n    H5 = Hub5.updateContent()\n    if H5 > 0 then \n        unit.setTimer('ReloadTimer',H5+1)\n    else\n        Hub5Updated = true\n    end\n    goto continue\nend\n\nif Hub6 and not Hub6Updated then \n    H6 = Hub6.updateContent()\n    if H6 > 0 then\n        unit.setTimer('ReloadTimer',H6+1)\n    else\n        Hub6Updated = true\n    end\n    goto continue\nend\n\nif Hub7 and not Hub7Updated then \n    H7 = Hub7.updateContent()\n    if H7 > 0 then\n        unit.setTimer('ReloadTimer',H7+1)\n    else\n        Hub7Updated = true\n    end\n    goto continue\nend\n\nif Hub8 and not Hub8Updated then \n    H8 = Hub8.updateContent()\n    if H8 > 0 then\n        unit.setTimer('ReloadTimer',H8+1)\n    else\n        Hub8Updated = true\n    end\n    goto continue\nend\n\n::continue::\n\nParsedHubs = boolTonumber[Hub1Parsed]+\n        boolTonumber[Hub2Parsed]+\n        boolTonumber[Hub3Parsed]+\n        boolTonumber[Hub4Parsed]+\n        boolTonumber[Hub5Parsed]+\n        boolTonumber[Hub6Parsed]+\n        boolTonumber[Hub7Parsed]+\n        boolTonumber[Hub8Parsed]\n\nif ParsedHubs ~= NHubs then \n    unit.setTimer('ReloadTimer',1)\n    goto waitforparse \nend\n\nReloadedHubs = boolTonumber[Hub1Updated]+\n        boolTonumber[Hub2Updated]+\n        boolTonumber[Hub3Updated]+\n        boolTonumber[Hub4Updated]+\n        boolTonumber[Hub5Updated]+\n        boolTonumber[Hub6Updated]+\n        boolTonumber[Hub7Updated]+\n        boolTonumber[Hub8Updated]\n\nif ReloadedHubs == NHubs then\n    \n    NumItems = 0 \n    unit.stopTimer('ReloadTimer') \n    \n    for id, quantity in pairs(ItemsList) do\n        \n        NumItems = NumItems + 1\n        \n        itemData = system.getItem(tonumber(id))\n        \n        ItemsListName[id] = itemData[\"displayNameWithSize\"]\n        ItemsListQuantity[id] = quantity\n        ItemsListVolume[id] = quantity*itemData[\"unitVolume\"]        \n        ItemsListMass[id] = quantity*itemData[\"unitMass\"]\n\n    end\n        \n    Memory.setStringValue('ItemsList',json.encode(ItemsList))\n    UpdateTime = system.getArkTime()\n    UpdateData()\n    \nend\n\n::waitforparse::",
+            "filter": {
+                "args": [
+                    {
+                        "value": "ReloadTimer"
+                    }
+                ],
+                "signature": "onTimer(tag)",
+                "slotKey": "-1"
+            },
+            "key": "16"
+        },
+        {
+            "code": "if NumItems > 0 then\n    \n    OldPage = Page\n    \n    Page = Page - math.floor(math.max(math.min(system.getMouseWheel(), 1), -1)+ 0.5);\n    Page = math.max(math.min(Page, math.ceil(NumItems/3) - 2), 1); \n       \n    if OldPage ~= Page then\n        UpdateData()\n    end\n    \nend",
+            "filter": {
+                "args": [
+                    {
+                        "value": "ListenforInput"
+                    }
+                ],
+                "signature": "onTimer(tag)",
+                "slotKey": "-1"
+            },
+            "key": "17"
+        },
+        {
+            "code": "tablex = require(\"pl/tablex\")\n\n-- Converts \"if variable\" to 1,0 for easier checking.\nfunction exists(var)\n    if var then check=1 else check=0 end\n    return check\nend\n\n-- Converts boolean to 1,0 for easier checking.\nboolTonumber={[true]=1,[false]=0}\n\n-- Collects OnContentUpdate from Hubs and merges into a single table indexed by ID.\nfunction ReceivePayload(Hub)\n    local Payload = Hub.getContent()\n\n    for index, data in pairs(Payload) do\n        if ItemsList[tostring(data.id)] then\n            ItemsList[tostring(data.id)] = ItemsList[tostring(data.id)] + data.quantity\n        else\n            ItemsList[tostring(data.id)] = data.quantity\n        end\n    end\n\n    return true\nend\n\n\n----------------\n\n\nfunction UpdateData()\n    \n    ----- Build the Item Table -----   \n    CompareFunction = '>'\n    if SortSwitch == 1 then\n        SortList = ItemsListVolume\n    elseif SortSwitch == 2 then\n        SortList = ItemsListQuantity\n    elseif SortSwitch == 3 then\n        SortList = ItemsListMass\n    elseif SortSwitch == 4 then\n        SortList = ItemsListName\n        CompareFunction = '<'\n    end\n    \n    counter = 0\n    \n    datatable = \"\"\n    \n    if DisplayMode == 'Cards' then\n        for id, data in tablex.sortv(SortList,CompareFunction) do\n\n            counter = counter + 1\n\n            if counter > (Page-1)*3 and counter <= ((Page-1)*3 + 9) then\n\n                current = system.getItem(tonumber(id))\n                path = current[\"iconPath\"]\n                path = string.gsub(path,\"resources_generated/\", \"\")\n                path = string.gsub(path,\".png\", \"\")\n                path = string.gsub(path,\"elements/\", \"@\")\n                path = string.gsub(path,\"functional\", \">\")\n                path = string.gsub(path,\"iconslib/materialslib/env_\", \"<\")\n                path = string.gsub(path,\"icon\", \"!\")\n                path = string.gsub(path,\"_001\", \"ş\")\n                path = string.gsub(path,\"part\", \"ç\")\n\n                local Q = tostring(math.ceil(ItemsListQuantity[id]))\n                local V = tostring(math.ceil(ItemsListVolume[id]))\n                local M = tostring(math.ceil(ItemsListMass[id]))\n                local I = path\n                local N = ItemsListName[id]\n\n                currentrow = Q .. \"$\" .. V .. \"$\" .. M .. \"$\" .. I .. \"$\" .. N\n\n                datatable = datatable .. \"#\" .. currentrow\n\n            end\n\n        end\n    elseif DisplayMode == 'Table' then\n        for id, data in tablex.sortv(SortList,CompareFunction) do\n\n            counter = counter + 1\n\n            if counter > (Page-1)*3 and counter <= ((Page-1)*3 + 16) then\n\n                current = system.getItem(tonumber(id))\n                local Q = tostring(math.ceil(ItemsListQuantity[id]))\n                local V = tostring(math.ceil(ItemsListVolume[id]))\n                local M = tostring(math.ceil(ItemsListMass[id]))\n                local I = \"P\"\n                local N = ItemsListName[id]\n\n                currentrow = Q .. \"$\" .. V .. \"$\" .. M .. \"$\" .. I .. \"$\" .. N\n\n                datatable = datatable .. \"#\" .. currentrow\n\n            end\n\n        end\n    end\n\n    ----- Acquire the Header Info -----\n    Header = ''\n    if Hub1 then\n        M = string.format('%.1f',Hub1.getItemsMass()/1000)\n        V = string.format('%.1f',Hub1.getItemsVolume()/1000)\n        C = string.format('%.1f',Hub1.getMaxVolume()/1000)\n        Header = Header .. \"$\" .. M .. \"$\" .. V .. \"$\" .. C\n    end\n    if Hub2 then\n        M = string.format('%.1f',Hub2.getItemsMass()/1000)\n        V = string.format('%.1f',Hub2.getItemsVolume()/1000)\n        C = string.format('%.1f',Hub2.getMaxVolume()/1000)\n        Header = Header .. \"$\" .. M .. \"$\" .. V .. \"$\" .. C\n    end\n    if Hub3 then\n        M = string.format('%.1f',Hub3.getItemsMass()/1000)\n        V = string.format('%.1f',Hub3.getItemsVolume()/1000)\n        C = string.format('%.1f',Hub3.getMaxVolume()/1000)\n        Header = Header .. \"$\" .. M .. \"$\" .. V .. \"$\" .. C\n    end\n    if Hub4 then\n        M = string.format('%.1f',Hub4.getItemsMass()/1000)\n        V = string.format('%.1f',Hub4.getItemsVolume()/1000)\n        C = string.format('%.1f',Hub4.getMaxVolume()/1000)\n        Header = Header .. \"$\" .. M .. \"$\" .. V .. \"$\" .. C\n    end\n    if Hub5 then\n        M = string.format('%.1f',Hub5.getItemsMass()/1000)\n        V = string.format('%.1f',Hub5.getItemsVolume()/1000)\n        C = string.format('%.1f',Hub5.getMaxVolume()/1000)\n        Header = Header .. \"$\" .. M .. \"$\" .. V .. \"$\" .. C\n    end\n    if Hub6 then\n        M = string.format('%.1f',Hub6.getItemsMass()/1000)\n        V = string.format('%.1f',Hub6.getItemsVolume()/1000)\n        C = string.format('%.1f',Hub6.getMaxVolume()/1000)\n        Header = Header .. \"$\" .. M .. \"$\" .. V .. \"$\" .. C\n    end\n    if Hub7 then\n        M = string.format('%.1f',Hub7.getItemsMass()/1000)\n        V = string.format('%.1f',Hub7.getItemsVolume()/1000)\n        C = string.format('%.1f',Hub7.getMaxVolume()/1000)\n        Header = Header .. \"$\" .. M .. \"$\" .. V .. \"$\" .. C\n    end\n    if Hub8 then\n        M = string.format('%.1f',Hub8.getItemsMass()/1000)\n        V = string.format('%.1f',Hub8.getItemsVolume()/1000)\n        C = string.format('%.1f',Hub8.getMaxVolume()/1000)\n        Header = Header .. \"$\" .. M .. \"$\" .. V .. \"$\" .. C\n    end\n    \n    ----- Info -----\n    Info = tostring(NHubs) .. \"$\" .. tostring(Page) .. \"$\" .. tostring(math.ceil(NumItems/3) - 2) \n    .. \"$\" .. DisplayMode .. \"$\" .. tostring(SortSwitch) .. \"$\" .. tostring(system.getArkTime()-UpdateTime)\n    \n    ----- Compose Message -----\n    Message = Info .. \"&\" .. Header .. \"&\" .. datatable \n    system.print(Message)\n    Screen.setScriptInput(Message)\n    \nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+            "filter": {
+                "args": [],
+                "signature": "onStart()",
+                "slotKey": "-4"
+            },
+            "key": "18"
+        }
+    ],
+    "methods": [],
+    "events": []
+}
